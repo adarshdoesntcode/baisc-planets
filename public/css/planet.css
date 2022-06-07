@@ -1,0 +1,54 @@
+
+.planet-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#planet {
+  transform: rotate(-18deg);
+  position: absolute;
+  z-index: 2;
+  top : 50%;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation: planet-rotation 160s linear infinite;
+  box-shadow: inset 60px 0 40px rgba(0, 0, 0, 0.774),
+              inset 160px 0 60px rgba(0, 0, 0, 0.938),
+              inset -160px 0 60px rgba(248, 248, 213, 0.2);
+}
+
+#planet:before {
+  transform: rotate(-18deg);
+  content: "";
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 695px;
+  height: 695px;
+  box-shadow: -60px 0 50px rgba(0, 0, 0, 0.904);
+}
+
+@keyframes planet-rotation {
+  from {background-position: -500px center;}
+  to {background-position: 496px center;}
+}
+
+@media screen and (max-width: 500px) {
+
+  #planet {
+      width: 450px;
+      height: 450px;
+  }
+
+  #planet:before {
+      width: 445px;
+      height: 445px;
+      box-shadow: -60px 0 50px black;
+  }    
+}

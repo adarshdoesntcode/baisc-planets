@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+  font-family: manrope,sans-serif;
+}
+
+.info{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* border: 2px solid green; */
+  max-width: 98%;
+  height: 40%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+.info div{
+  align-items: center;
+  width: 100%;
+}
+
+.planet-info{
+  padding-left: 10%;
+}
+
+.planet-name h2{
+  margin-top: 8%;
+  font-size: 50px;
+  padding-bottom: 20px;
+  /* border: 2px solid red; */
+  
+}
+.planet-facts{
+  padding-right: 25%;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.navigation{
+  position :relative;
+}
+
+.navigation .left {
+  position: absolute;
+  bottom: 25%;
+  left :15%
+}
+
+.navigation .right {
+  position: absolute;
+  bottom: 25%;
+  left :55%;
+}
+
+/* planet stats */
+
+.planet-stats{
+  flex-grow: 1;
+ /* max-width: 40%; */
+ /* border: 2px blue solid; */
+}
+
+
+
+.stats-row-1 span{
+  font-size: 14px;
+  
+}
+
+.stats-row-1 div{
+  padding-right: 2%;
+}
+
+.stats-row-1 h1{
+  font-size: 48px;
+  font-weight: 200;
+  padding-bottom: 20%;
+}
+
+.stats-row-2 span{
+  font-size: 14px;
+  
+}
+
+.stats-row-2 div{
+  padding-right: 2%;
+}
+
+
+.stats-row-2 h1{
+  font-size: 48px;
+  font-weight: 200;
+  padding-bottom: 25%;
+}
+
+
+.stats-row-1{
+  display: flex;
+  height: 48%;
+  /* border: white 3px solid; */
+  margin-bottom: 3%;
+ 
+
+}
+
+.stats-row-2{
+  display: flex;
+  height: 48%;
+}
+#left,#right{
+  transition: all .2s ease-in-out; 
+}
+#left:hover,#right:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+

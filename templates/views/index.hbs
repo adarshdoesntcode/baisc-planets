@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/background.css">
+  <link rel="stylesheet" href="/css/planet.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  <title>Planets.</title>
+
+</head>
+<body>
+  <div class="background">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+  </div>
+
+  <div class="info">
+    <div class="planet-info">
+      <div class="planet-name">
+        <h2 id="planet-name" data-aos="fade-up">Loading...</h2>
+      </div>
+      <div class="planet-facts">
+        <p id="facts" data-aos="fade-up">Loading..</p>
+      </div>
+    </div>
+    <div class="navigation" data-aos="fade-up">
+      <div class="left"><img id="left" src="/img/left.png"/></div>
+      <div class="right"><img id="right" src="/img/right.png"/></div>
+    </div>
+    <div class="planet-stats" data-aos="fade-up">
+        <div class="stats-row-1">
+          <div class="col11"><h1 id="temp" >0</h1> <span>Temp</span></div>
+          <div class="col12"><h1 id="gravity" >0</h1> <span>Gravity</span></div>
+          <div class="col13" ><h1 id="year">0</h1> <span>Year</span></div>
+        </div>
+        <div class="stats-row-2">
+          <div></div>
+          <div class="col21" ><h1 id="moons">0</h1> <span>Moons</span></div>
+          <div class="col22" ><h1 id="day">0</h1> <span>Day</span></div>
+        </div>
+    </div>
+  </div>
+
+  <section class="planet-wrapper" data-aos="zoom-in-up">
+    <div id="planet"></div>
+  </section>
+  <script src="/js/app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    delay: 1300,
+    duration: 1000
+  });
+</script>
+</body>
+</html>
