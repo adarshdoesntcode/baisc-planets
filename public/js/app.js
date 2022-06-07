@@ -64,7 +64,7 @@ const fetchCall = (planetIndex)=>{
       }
       else
       {
-        hideall();
+        
         planetName.textContent = data.name;
         temp.innerHTML = Math.round(data.avgTemp-273.15)+'&deg;';
         gravity.textContent = data.gravity;
@@ -73,31 +73,11 @@ const fetchCall = (planetIndex)=>{
         planet.style.background = `url(/img/bodies/${data.name}.jpg)`;
         facts.textContent=data.facts;
         moons.textContent=data.moons;
-        unhideall();
-        AOS.refreshHard();
+       
+        
       }
     }
     )
   })
   }
   
-  
-const hideall = ()=>{
-  planetName.classList.add("hide");
-  facts.classList.add("hide");
-  temp.classList.add("hide");
-  gravity.classList.add("hide");
-  year.classList.add("hide");
-   day.classList.add("hide");
-   moons.classList.add("hide");
-}
-
-const unhideall = ()=>{
-  planetName.classList.remove("hide");
-  facts.classList.remove("hide");
-  temp.classList.remove("hide");
-  gravity.classList.remove("hide");
-  year.classList.remove("hide");
-   day.classList.remove("hide");
-   moons.classList.remove("hide");
-}
