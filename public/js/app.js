@@ -17,13 +17,13 @@ window.onload = ()=>{
   fetchCall(planetIndex);
 }
 left.addEventListener("click",()=>{
-  // planetName.textContent = "Loading..."
-  // facts.textContent="";
-  // temp.textContent = "-";
-  // gravity.textContent ="-";
-  // year.textContent = "-";
-  //  day.textContent = "-";
-  //  moons.textContent="-";
+  planetName.textContent = "Loading..."
+  facts.textContent="";
+  temp.textContent = "-";
+  gravity.textContent ="-";
+  year.textContent = "-";
+   day.textContent = "-";
+   moons.textContent="-";
   if(planetIndex==1){
     planetIndex = 8;  
   }
@@ -35,13 +35,13 @@ left.addEventListener("click",()=>{
 
 
 right.addEventListener("click",()=>{
-  // planetName.textContent = "Loading..."
-  // facts.textContent="";
-  // temp.textContent = "-";
-  // gravity.textContent ="-";
-  // year.textContent = "-";
-  //  day.textContent = "-";
-  //  moons.textContent="-";
+  planetName.textContent = "Loading..."
+  facts.textContent="";
+  temp.textContent = "-";
+  gravity.textContent ="-";
+  year.textContent = "-";
+   day.textContent = "-";
+   moons.textContent="-";
   if(planetIndex==8){
     planetIndex = 1;  
   }
